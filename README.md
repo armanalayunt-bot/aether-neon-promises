@@ -11,9 +11,9 @@ A mysterious app called AETHER appears on your phone and begins offering impossi
 
 ## Play
 
-The playable `index.html` will be added to this repository. Once it is present, it can be opened in a modern desktop browser or published through GitHub Pages.
+**The playable alpha is uploaded:** [`index.html`](./index.html) (7.3 MB). The game can be played through GitHub Pages once the repository's Pages site is enabled. GitHub's code viewer itself does not run HTML games.
 
-The separately prepared `AETHER-v082-PC-Offline-Alpha.zip` is an offline HTML edition. It will be added as a GitHub Release download. This is **not** a native Windows executable or Android APK; standalone app packaging remains in development.
+For **offline play**, download `index.html` using its **Raw / Download raw file** option, save it locally, then open the downloaded HTML file in a modern browser. A separately packaged `AETHER-v082-PC-Offline-Alpha.zip` has also been prepared and will be made available as a release download once hosted. The alpha is **not** a native Windows executable or Android APK; standalone app packaging remains in development.
 
 ## Alpha features
 
