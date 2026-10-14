@@ -1,38 +1,41 @@
 # AETHER // Neon Promises — v0.8.2 Alpha
 
-**Creator:** Szver Aether Productions  
-**Genre:** Interactive simulated-smartphone romance visual novel, mystery  
-**Current content:** Chapters 1–3, Act I (alpha; story incomplete)  
-**Content note:** Intended for adults; mature themes and suggestive outfits. This alpha does not contain explicit sex acts.
+**Developer:** Szver Aether Productions  
+**Genre:** Romance / mystery visual novel presented as a smartphone  
+**Current build:** v0.8.2 Alpha — Chapters 1–3, Act I (in progress)  
+**Platform:** Desktop browser (offline)
 
-## About
+A mysterious app appears on the protagonist's phone and begins influencing conversations, decisions, and relationships. Choose responses, discover gallery photos, and uncover AETHER's secrets.
 
-A mysterious app called AETHER appears on your phone and begins offering impossible suggestions about human relationships. Follow messages, make decisions, discover photos, and see how your choices influence the characters.
+## Download and play (offline)
 
-## Play
+**AETHER is now included in this repository** as `index.html`.
 
-**The playable alpha is uploaded:** [`index.html`](./index.html) (7.3 MB). The game can be played through GitHub Pages once the repository's Pages site is enabled. GitHub's code viewer itself does not run HTML games.
+1. Click **Code → Download ZIP** on this repository.
+2. Extract the downloaded ZIP.
+3. Double-click `index.html` to open the game in a modern browser (Chrome, Firefox, or Edge).
+4. You do **not** need an internet connection after downloading.
 
-For **offline play**, download `index.html` using its **Raw / Download raw file** option, save it locally, then open the downloaded HTML file in a modern browser. A separately packaged `AETHER-v082-PC-Offline-Alpha.zip` has also been prepared and will be made available as a release download once hosted. The alpha is **not** a native Windows executable or Android APK; standalone app packaging remains in development.
+**Web play link:** GitHub Pages setup is pending. Once enabled, the game will also launch from a normal website address.
 
-## Alpha features
+## Included in this alpha
 
-- Simulated smartphone with in-game messages and apps
-- Branching dialogue with visible Love / Trust / Openness and other choice effects
-- Character interactions and discovery-gated gallery
-- Local saving plus export/import
-- Chapters 1–3 of a longer unfinished story
+- Smartphone-style message threads and choices
+- Relationship stats (Love, Trust, Openness, and other effects)
+- Discovery-based photo gallery
+- Local progress saving, save export/import options
+- Early story chapters; more story and characters are planned
 
-## Save tip
+This is an unfinished free alpha, **not yet a standalone Windows executable or Android APK**. Some later artwork batches and planned story routes are not included. It includes mature themes and suggestive outfits, but the current release is not a finished explicit-adult game.
 
-Your progress is stored locally in your browser. Export your save from the game menu before changing devices, browsers, or file locations.
+### Important save tip
+
+Progress is saved in your browser's local storage. Export a save before switching browsers, devices, or file locations.
 
 ## Support development
 
-[Patreon — Szver Aether Productions](https://www.patreon.com/SzverAetherProductions) — optional support; the alpha is free.
+**[Szver Aether Productions on Patreon](https://www.patreon.com/SzverAetherProductions)** — optional support for future updates.
 
-## Development log
-
-[AETHER on F95Zone](https://f95zone.to/threads/aether-neon-promises-v0-8-2-alpha-development-log-szver-aether-productions.318731/)
+**[Follow our F95Zone development log](https://f95zone.to/threads/aether-neon-promises-v0-8-2-alpha-development-log-szver-aether-productions.318731/)**
 
 © 2026 Szver Aether Productions. All rights reserved.
