@@ -16,7 +16,9 @@ A mysterious app appears on the protagonist's phone and begins influencing conve
 3. Double-click `index.html` to open the game in a modern browser (Chrome, Firefox, or Edge).
 4. You do **not** need an internet connection after downloading.
 
-**Web play link:** GitHub Pages setup is pending. Once enabled, the game will also launch from a normal website address.
+**▶ [Play AETHER v0.8.2 online — free public alpha](https://armanalayunt-bot.github.io/aether-neon-promises/)**
+
+No installation needed for web play. Download the repository ZIP (above) if you'd like an offline copy.
 
 ## Included in this alpha
 
