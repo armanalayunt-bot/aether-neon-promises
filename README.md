@@ -1,43 +1,51 @@
-# AETHER // Neon Promises — v0.8.2 Alpha
+# AETHER // Neon Promises
 
+**Current version:** v0.9.2 Alpha — player-feedback rebuild  
 **Developer:** Szver Aether Productions  
-**Genre:** Romance / mystery visual novel presented as a smartphone  
-**Current build:** v0.8.2 Alpha — Chapters 1–3, Act I (in progress)  
-**Platform:** Desktop browser (offline)
+**Genre:** Choice-driven adult-oriented romance and mystery visual novel  
+**Playable chapters:** Chapters 1–4 plus branching epilogue  
+**Platform:** Offline HTML/browser game for Windows, Linux and macOS. Native Windows and Android apps are planned but are not available yet.
 
-A mysterious app appears on the protagonist's phone and begins influencing conversations, decisions, and relationships. Choose responses, discover gallery photos, and uncover AETHER's secrets.
+A mysterious app appears on your phone and begins reshaping how you see relationships, secrets and trust. Meet Simona, Alyx, Eliza, Adrian and the rest of the cast through a simulated smartphone; make choices that can affect conversations, photo discoveries and future events.
 
-## Download and play (offline)
+## Play online — free
 
-**AETHER is now included in this repository** as `index.html`.
+**[▶ Play AETHER v0.9.2](https://armanalayunt-bot.github.io/aether-neon-promises/)**
 
-1. Click **Code → Download ZIP** on this repository.
-2. Extract the downloaded ZIP.
-3. Double-click `index.html` to open the game in a modern browser (Chrome, Firefox, or Edge).
-4. You do **not** need an internet connection after downloading.
+No installation required. The online game uses local browser storage for progress.
 
-**▶ [Play AETHER v0.8.2 online — free public alpha](https://armanalayunt-bot.github.io/aether-neon-promises/)**
+## Download for offline play
 
-No installation needed for web play. Download the repository ZIP (above) if you'd like an offline copy.
+1. On [this repository](https://github.com/armanalayunt-bot/aether-neon-promises), choose **Code → Download ZIP**.
+2. Extract the archive to a folder.
+3. Open **`index.html`** with a modern desktop browser such as Chrome, Firefox or Edge.
+4. Play offline. The extra `releases/` and `.github/` files in the repository are deployment metadata and are not required for gameplay.
 
-## Included in this alpha
+**Save note:** Export your save from the previous version before switching browsers, devices or file locations. Import it using the in-game menu. Existing saves are intended to migrate but should be backed up.
 
-- Smartphone-style message threads and choices
-- Relationship stats (Love, Trust, Openness, and other effects)
-- Discovery-based photo gallery
-- Local progress saving, save export/import options
-- Early story chapters; more story and characters are planned
+## What's new in v0.9.2
 
-This is an unfinished free alpha, **not yet a standalone Windows executable or Android APK**. Some later artwork batches and planned story routes are not included. It includes mature themes and suggestive outfits, but the current release is not a finished explicit-adult game.
+- Chapter 4 and a branching epilogue, with different relationship outcomes.
+- Stronger immediate reactions to earlier story choices.
+- New photo/gallery reward notifications with in-conversation previews.
+- Conversations start at the first new message rather than jumping to the bottom.
+- Exact numerical choice rewards hidden by default, with optional qualitative hints.
+- Rebalanced Love and Trust progression.
+- More private protagonist thoughts in the Notes journal.
+- Expanded relationship tracking, group interactions and the VEILROOM creator-app storyline.
+- Save import/export and migration support.
 
-### Important save tip
+See [CHANGELOG.md](CHANGELOG.md) for release history.
 
-Progress is saved in your browser's local storage. Export a save before switching browsers, devices, or file locations.
+## Alpha status
 
-## Support development
+This is a **work in progress**, with shared story sections and routes that will expand in future releases. Romantic characters are adults. The current alpha contains mature relationship themes and suggestive artwork, but **no explicit sexual acts**. It is a browser game, **not** a native EXE or APK.
 
-**[Szver Aether Productions on Patreon](https://www.patreon.com/SzverAetherProductions)** — optional support for future updates.
+## Feedback and support
 
-**[Follow our F95Zone development log](https://f95zone.to/threads/aether-neon-promises-v0-8-2-alpha-development-log-szver-aether-productions.318731/)**
+- **Patreon:** [Szver Aether Productions](https://www.patreon.com/SzverAetherProductions) — optional development support.
+- **Development log:** [AETHER on F95Zone](https://f95zone.to/threads/aether-neon-promises-v0-8-2-alpha-development-log-szver-aether-productions.318731/).
+
+Thanks for helping improve AETHER with your playtesting and feedback.
 
 © 2026 Szver Aether Productions. All rights reserved.
