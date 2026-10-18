@@ -1,0 +1,66 @@
+name: Publish AETHER v0.9.2 Alpha
+on:
+  push:
+    paths:
+      - '.github/workflows/publish-aether-v092.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-game:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply and verify v0.9.2 game update
+        shell: bash
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          game_path = Path("index.html")
+          patch_path = Path("releases/v0.9.2-update-patch.json")
+          patch = json.loads(patch_path.read_text(encoding="utf-8"))
+          old_data = game_path.read_bytes()
+
+          def git_blob_sha(data):
+              header = f"blob {len(data)}".encode() + b"\0"
+              return hashlib.sha1(header + data).hexdigest()
+
+          current_sha = git_blob_sha(old_data)
+          if current_sha == patch["to_git_blob_sha"]:
+              print("v0.9.2 is already deployed; no changes necessary")
+          else:
+              if current_sha != patch["from_git_blob_sha"]:
+                  raise RuntimeError(f"Unexpected base version {current_sha}; refusing to overwrite game")
+              lines = old_data.decode("utf-8").splitlines(keepends=True)
+              for start, end, new_text in reversed(patch["changes"]):
+                  lines[start:end] = new_text.splitlines(keepends=True)
+              updated = "".join(lines).encode("utf-8")
+              new_sha = git_blob_sha(updated)
+              if new_sha != patch["to_git_blob_sha"]:
+                  raise RuntimeError(f"Update check failed: expected {patch['to_git_blob_sha']}, got {new_sha}")
+              game_path.write_bytes(updated)
+              print(f"Validated AETHER v0.9.2 game blob: {new_sha}")
+          PY
+
+      - name: Commit updated playable game
+        shell: bash
+        run: |
+          if ! git diff --quiet -- index.html; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.html
+            git commit -m "Deploy AETHER v0.9.2 alpha playable game"
+            git push origin HEAD:main
+          else
+            echo "Game already at v0.9.2"
+          fi
